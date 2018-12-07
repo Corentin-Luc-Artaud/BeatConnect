@@ -8,18 +8,19 @@ import {TranslateService} from '@ngx-translate/core';
 })
 export class TranslateComponent implements OnInit {
 
-  translate;
+  translated: TranslateService;
   selected = 'fr';
+  lang: string;
   ngOnInit() {
   }
-  constructor(translate: TranslateService) {
+  constructor(private translate: TranslateService) {
     // this language will be used as a fallback when a translation isn't found in the current language
     translate.setDefaultLang('fr');
-    this.translate = translate;
+    this.translated = translate;
   }
 
-  useLanguage(language: string) {
-    this.translate.use(language);
+  useLanguage() {
+    this.translated.use(this.lang);
   }
 
 }

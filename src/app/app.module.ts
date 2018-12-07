@@ -11,6 +11,10 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { TranslateComponent } from './translate/translate.component';
 import {FormsModule} from '@angular/forms';
 import {AngularFontAwesomeModule} from 'angular-font-awesome';
+import { AgmCoreModule } from '@agm/core';
+import { GmapComponent } from './gmap/gmap.component';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -21,7 +25,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     ChatBoxComponent,
-    TranslateComponent
+    TranslateComponent,
+    GmapComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -30,7 +35,11 @@ export function HttpLoaderFactory(http: HttpClient) {
     HttpClientModule,
     MatIconModule,
     FormsModule,
+    LeafletModule.forRoot(),
     AngularFontAwesomeModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDVOMgjfTsoYMcrmlYwqv7jnGboQDskpy8'
+    }),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
