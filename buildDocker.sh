@@ -1,0 +1,1 @@
+sudo docker build --force-rm --add-host localhost:127.0.0.1 -t beatconnect:test .
