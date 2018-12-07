@@ -29,7 +29,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [ "../node_modules/jquery/dist/jquery.min.js", "./sc.js" ]
+            "scripts": [ "./node_modules/jquery/dist/jquery.min.js", "./src/app/sc.js" ]
           },
           "configurations": {
             "production": {
