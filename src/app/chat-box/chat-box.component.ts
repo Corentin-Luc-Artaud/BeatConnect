@@ -14,11 +14,19 @@ export class ChatBoxComponent implements OnInit {
 
   constructor() {
     this.connectedUserToken = 'OK';
-    this.class = 'block';
+    this.class = 'none';
   }
 
   ngOnInit() {
     this.getMessages();
+  }
+
+  close() {
+    this.class = 'none';
+  }
+
+  open() {
+    this.class = 'block';
   }
 
   sendMessage() {
