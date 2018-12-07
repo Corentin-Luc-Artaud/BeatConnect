@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-chat-box',
@@ -7,9 +7,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatBoxComponent implements OnInit {
 
-  constructor() { }
+  public messages: Message[];
+  public connectedUserToken: string;
+  public messageContent: string;
+  public class: string;
+
+  constructor() {
+    this.connectedUserToken = 'OK';
+    this.class = 'block';
+  }
 
   ngOnInit() {
+    this.getMessages();
+  }
+
+  sendMessage() {
+    this.messages.push({message : this.messageContent, time: Date.now(), who: 'User'});
+    this.messageContent = '';
+  }
+
+  getMessages() {
+    this.messages = [{
+      message : 'Salut l\'intru',
+      time : Date.now(),
+      who : 'Bot'
+    }, {
+      message : 'Ok',
+      time : Date.now(),
+      who : 'User'
+    }, ];
   }
 
 }

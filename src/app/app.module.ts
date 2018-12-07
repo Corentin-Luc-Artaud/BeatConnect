@@ -9,6 +9,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatSelectModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { TranslateComponent } from './translate/translate.component';
+import {FormsModule} from '@angular/forms';
+
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -26,6 +28,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatSelectModule,
     HttpClientModule,
     MatIconModule,
+    FormsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
