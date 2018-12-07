@@ -1,33 +1,171 @@
-<div class="container is-vcentered is-full-desktop" style="height: 100%">
-  <div class="level">
-    <div class="section level-left">
-      bloc 1
+<div style="background-color: #000;">
+  <!-- Left Menu -->
+  <div id="leftmenu">
+
+    <div id="date_time">
+      <div id="date" class="semi_arc e4">
+        <div class="semi_arc_2 e4_1">
+          <div class="counterspin4"></div>
+        </div>
+        <div style="font-size: 40px; margin-top: 25px;">04</div>
+        <div style="font-size: 25px;">Hygrométrie</div>
+      </div>
+
+      <div id="time" class="arc e1">
+        <div style="font-size: 23px; margin-left: -10px; margin-top: 23px;">23:41</div>
+        <!--<div style="font-size: 15px; margin-left: 40px; margin-top: 0px; display: inline;">31</div>-->
+        <div style="font-size: 17px; margin-top: 10px;">Battérie</div>
+      </div>
+    </div>
+    <div id="date_time1">
+      <div id="date1" class="semi_arc e4">
+        <div class="semi_arc_2 e4_1">
+          <div class="counterspin4"></div>
+        </div>
+        <div style="font-size: 40px; margin-top: 25px;">04</div>
+        <div style="font-size: 25px;">January</div>
+      </div>
+
+      <div id="time1" class="arc e1">
+        <div style="font-size: 23px; margin-left: -10px; margin-top: 23px;">23:41</div>
+        <!--<div style="font-size: 15px; margin-left: 40px; margin-top: -30px; display: inline;">31</div>-->
+        <div style="font-size: 17px; margin-top: 5px;">Tuesday</div>
+      </div>
     </div>
 
-    <div class="section level-right">
-      <app-translate></app-translate>
-      bloc 2
+    <span class="menuitem entypo-gauge" style="font-size: 30px; margin-left: 10px;">
+    <p id="cpu" class="caption" style="font-size: 20px;">CPU Usage: 19%</p>
+  </span> <br/>
+
+    <span class="menuitem entypo-chart-area" style="font-size: 30px; margin-left: 10px;">
+    <p id="ram" class="caption" style="font-size: 20px;">Physical Memory: 28%</p>
+  </span> <br/>
+
+    <span class="menuitem entypo-chart-pie" style="font-size: 30px; margin-left: 10px;">
+    <p id="proc" class="caption" style="font-size: 20px;">Processes: 73</p>
+  </span>
+
+  </div>
+
+  <!-- Right Menu -->
+  <div id="rightmenu">
+    <app-translate style="float: right"></app-translate>
+
+    <p class="title" style="text-align: left; margin-left: 10px;">Notes</p>
+    <div id="particle10" class="hline"></div>
+    <div id="particle11" class="hline"></div>
+    <div id="particle12" class="vline"></div>
+    <label for="note_input"></label><textarea id="note_input" rows="12" cols="44">For the maximum viewing experience, please view this pen in full screen where the code is displayed to the side of the display.
+
+    To Complete:
+    - Right Menu (this side of the screen)
+      - Make this note restricted to 11 rows
+      - Fill in empty space below
+    - Weather widget next to date/time
+    - Place quick access taskbar down bottom
+    - Fill in space at the top</textarea>
+
+  </div>
+
+  <!-- Arc Reactor -->
+  <div id="arc_container">
+    <div class="arc_reactor">
+      <div class="case_container">
+        <div class="e7">
+          <div class="semi_arc_3 e5_1">
+            <div class="semi_arc_3 e5_2">
+              <div class="semi_arc_3 e5_3">
+                <div class="semi_arc_3 e5_4"></div>
+              </div>
+            </div>
+          </div>
+          <div class="core2"></div>
+        </div>
+        <ul class="marks">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
     </div>
   </div>
 
-  <div class="level ">
-    <div class="section level-left">
-      bloc 1
-    </div>
+  <!-- Particles -->
+  <!-- Left Menu Particles -->
+  <canvas id="particle1" width="20" height="500"></canvas>
 
-    <div class="section level-right">
-      bloc 1
-    </div>
+  <canvas id="particle1_1" width="40" height="510"></canvas>
+
+  <canvas id="particle1_2" width="40" height="510"></canvas>
+
+  <div id="particle1_3">
+    > > > >
   </div>
 
+  <div id="particle3" class="vline"></div>
+  <div id="particle4" class="vline"></div>
+  <div id="particle5" class="vline"></div>
+  <div id="particle6" class="vline"></div>
+  <div id="particle7" class="vline"></div>
+  <div id="particle8" class="vline"></div>
+  <div id="particle9" class="vline"></div>
+  <app-chat-box></app-chat-box>
 
-  <div class="level">
-    <div class="section level-left">
-      bloc 1
-    </div>
-
-    <div class="section level-right">
-      <app-chat-box></app-chat-box>
-    </div>
-  </div>
 </div>
