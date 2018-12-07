@@ -1,11 +1,11 @@
 
 <div class="my_container">
-  <mat-form-field >
-    <mat-select [(value)]="selected">
-      <mat-option value="qb" (click)="useLanguage('qb')">Fr-Quebec</mat-option>
-      <mat-option value ="fr" (click)="useLanguage('fr')">Fr-France</mat-option>
-    </mat-select>
-  </mat-form-field>
+  <form>
+    <select [(value)]="selected">
+      <option value="qb" (click)="useLanguage('qb')">Fr-Quebec</option>
+      <option value ="fr" (click)="useLanguage('fr')">Fr-France</option>
+    </select>
+  </form>
 
 </div>
 

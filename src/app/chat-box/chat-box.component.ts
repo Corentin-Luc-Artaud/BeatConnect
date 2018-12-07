@@ -11,7 +11,7 @@ export class ChatBoxComponent implements OnInit {
   public connectedUserToken: string;
   public messageContent: string;
   public class: string;
-  public model
+  public model;
 
   constructor() {
     this.connectedUserToken = 'OK';
@@ -35,7 +35,6 @@ export class ChatBoxComponent implements OnInit {
         return;
       }
     }
-    alert(null);
     return;
   }
 
@@ -81,6 +80,9 @@ export class ChatBoxComponent implements OnInit {
       'bonne nuit': [
         'Les machines dorment maintenant ?'
       ],
+      'bonjour': [
+        'toi même'
+      ],
       'dis .*': [
         'Ca te ferait plaisir, avoues !',
         'Seulement si tu dis fzojvzn.'
@@ -97,11 +99,21 @@ export class ChatBoxComponent implements OnInit {
       'mort|meurt|mourir': [
         'Omae wa mou shindeiru.'
       ],
+      'mourrir': [
+        'Mourir avec un seul r, parce qu\'on ne meurt qu\'une fois.'
+      ],
       'chut|tais|insupportable': [
         'No u.'
       ],
       't ki|Qui es.tu|Pr.sente': [
         'Je suis un robot qui répond aux questions que mes développeurs ont bien voulu implémenter.'
+      ],
+      'd.sol': [
+        'Ah.',
+        'Tant que tu comprends.'
+      ],
+      '.*': [
+        'Ceci est une réponse par défaut parce que je n\'ai pas compris.'
       ]
     };
   }

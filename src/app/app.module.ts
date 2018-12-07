@@ -9,7 +9,6 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatSelectModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { TranslateComponent } from './translate/translate.component';
-import {NgbAlertModule, NgbModule, NgbPaginationModule} from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule} from '@angular/forms';
 import {AngularFontAwesomeModule} from 'angular-font-awesome';
 
@@ -26,12 +25,9 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   imports: [
     BrowserAnimationsModule,
-    NgbModule,
     BrowserModule,
     MatSelectModule,
     HttpClientModule,
-    NgbPaginationModule,
-    NgbAlertModule,
     MatIconModule,
     FormsModule,
     AngularFontAwesomeModule,
