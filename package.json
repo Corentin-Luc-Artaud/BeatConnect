@@ -24,6 +24,7 @@
     "@ngx-translate/core": "^11.0.1",
     "@ngx-translate/http-loader": "^4.0.0",
     "@wizishop/ng-wizi-bulma": "^7.0.5",
+    "angular-font-awesome": "^3.1.2",
     "bulma": "^0.7.2",
     "bulma-extensions": "^4.0.0",
     "core-js": "^2.5.4",
